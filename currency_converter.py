@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # -*- coding: ascii -*-
-
+#Importing currencies will demonstrate the effects of currency
 import click
 import json
 from api import currency_converter
