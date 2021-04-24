@@ -4,8 +4,9 @@
 import click
 import json
 from api import currency_converter
-
-
+#added a "greet" statement to prompt the user on inputs
+greet = input("Hello!, what currency would you like to translate")
+print(greet)
 @click.command()
 @click.option('--amount', nargs=1, type=float)
 @click.option('--input_currency', nargs=1)
