@@ -7,6 +7,9 @@ from api import currency_converter
 #added a "greet" statement to prompt the user on inputs
 greet = input("Hello!, what currency would you like to translate")
 print(greet)
+type = ('USD','EUR','GBP','JPY','CHF','CAD','ZAR')
+if greet == type:
+    print('Are you sure this is the type you want?')
 @click.command()
 @click.option('--amount', nargs=1, type=float)
 @click.option('--input_currency', nargs=1)
