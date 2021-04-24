@@ -14,6 +14,7 @@ def main(amount, input_currency, output_currency):
     resp = currency_converter(amount, input_currency, output_currency)
     print(json.dumps(resp if isinstance(resp, dict) else resp[0], indent=4))
 
-
+#an if statement to compare the function and variable
 if __name__ == "__main__":
     main()
+#call the main function of the program 
